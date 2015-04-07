@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Follow Lessons</string>
+    <string-array name="Tags">
+        <item>Github</item>
+        <item>C++</item>
+        <item>Qt</item>
+        <item>HTML 5</item>
+        <item>CSS3</item>
+        <item>JavaScript</item>
+        <item>JQuery</item>
+        <item>Ajax</item>
+        <item>JSon</item>
+        <item>PHP</item>
+        <item>Ruby on Rails</item>
+        <item>Dreamweaver</item>
+        <item>Drupal</item>
+        <item>Fireworks</item>
+        <item>Joomla</item>
+        <item>Wordpress</item>
+        <item>MySql</item>
+        <item>SEO</item>
+        <item>Photoshop</item>
+
+    </string-array>
+
+    <string name="drawer_open">Abrir navigation drawer</string>
+    <string name="drawer_close">Cerrar navigation drawer</string>
+    <string name="headlines">Encabezados de</string>
+</resources>
