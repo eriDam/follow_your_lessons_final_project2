@@ -20,8 +20,6 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 
-
-
 public class Main extends Activity {
 
     /*
@@ -46,6 +44,11 @@ public class Main extends Activity {
         tagTitles = getResources().getStringArray(R.array.Tags);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawerList = (ListView) findViewById(R.id.left_drawer);
+        /*Tendré que llamar a los fragments
+        * .......
+        *
+        * **/
+
 
         // Setear una sombra sobre el contenido principal cuando el drawer se despliegue
         drawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
@@ -81,7 +84,13 @@ public class Main extends Activity {
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
 
-        // Crear ActionBarDrawerToggle para la apertura y cierre
+       /*
+         Crear ActionBarDrawerToggle para la apertura y cierre:
+         primer parámetro es el contexto donde se ejecuta. También necesita la instancia del DrawerLayout con que se
+         relacionará. El tercer parámetro es el drawable que representará su presencia, en este caso es el recurso del
+         sistema R.drawable.ic_drawer. Y por ultimo dos strings de accesibilidad que contienen la información sobre la
+         apertura y cierre del Drawer.
+         */
         drawerToggle = new ActionBarDrawerToggle(
                 this,
                 drawerLayout,
@@ -137,6 +146,7 @@ public class Main extends Activity {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             selectItem(position);
+            
         }
     }
 
